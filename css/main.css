@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'Alistair Signature';
+    src: url('../fonts/Alistair Signature.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Novelist';
+    src: url('../fonts/ofont.ru_Novelist.ttf') format('opentype');
+    font-weight: lighter;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar */
+nav.navbar {
+    background-color: transparent !important;
+    background-image: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%) !important;
+    box-shadow: 0 2px 2px 0 #ea55171f !important;
+}
+
+.navbar-brand {
+    padding-left: 20px;
+}
+
+.navbar-nav {
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
+}
+
+.navbar-nav a {
+    color: #EA5517;
+}
+
+.logo-title {
+    font-family: 'Alistair Signature', cursive;
+    color: #EA5517 !important;
+}
+
+.navbar-toggler {
+    background: transparent;
+    border: 2px solid #fff;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.navbar-toggler:hover {
+    border-color: #EA5517;
+}
+
+/* hero */
+.hero {
+    background: url('../img/bg-hero.svg') no-repeat;
+    height: auto;
+    padding-bottom: 57vh;
+}
+
+.hero-title {
+    font-family: 'Alistair Signature', cursive;
+    color: #4D0600 !important;
+    font-size: 72px;
+    padding-top: 90px;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        background-image: url('../img/bg-mobile.svg');
+        padding-bottom: 15vh;   
+        background-size: cover; 
+    }
+    nav.navbar {
+        position: static !important;
+    }
+}
+
+
+/* button */
+.btn-action,
+.reg-btn,
+.login-btn {
+    border: 3px solid #EA5517;
+    border-radius: 30px;
+    padding: 10px 36px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-action {
+    background-color: transparent;
+    color: #EA5517;
+}
+
+.btn-action a {
+    text-decoration: none;
+    color: #4D0600;
+}
+
+.btn-action:hover {
+    background-color: #EA5517;
+    color: #F7F0DF;
+}
+
+.btn-action:hover a {
+    color: #F7F0DF;
+}
+
+.reg-btn,
+.login-btn {
+    background-color: #EA5517;
+    color: #fff;
+}
+
+.reg-btn:hover,
+.login-btn:hover {
+    background-color: transparent;
+    color: #EA5517;
+}
+
+/* sections */
+.about,
+.secret,
+.bestsellers,
+.action,
+.reviews {
+    padding: 80px 0 0;
+}
+
+.title {
+    font-family: 'Novelist', serif;
+    font-size: 37px;
+    line-height: 1;
+    margin-bottom: 40px;
+    color: #EA5517;
+}
+
+.font-another {
+    font-family: 'Alistair Signature', cursive;
+    font-size: 57px;
+    line-height: 0.2;
+    color: #4D0600;
+}
+
+.content-about {
+    padding-top: 60px;
+}
+
+.text-content {
+    margin-bottom: 30px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 14px;
+    color: #4D0600;
+    text-align: justify;
+}
+
+.text-secret {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* block secrets */
+.block {
+    display: table;
+    width: 100%;
+    min-height: 400px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    background: url('../img/croissant.svg') center / contain no-repeat;
+}
+
+.block:hover {
+    animation: shakeCroissant 0.6s ease-in-out;
+}
+
+.block .secret-content {
+    padding: 60px 90px;
+}
+
+.title-secret {
+    font-family: 'Alistair Signature', cursive;
+    font-size: 54px;
+    margin-bottom: 40px;
+    color: #F7F0DF;
+}
+
+.txt-beige {
+    color: #F7F0DF;
+}
+
+@keyframes shakeCroissant {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    15% {
+        transform: rotate(-1.5deg) scale(1.008);
+    }
+
+    35% {
+        transform: rotate(1.5deg) scale(1.012);
+    }
+
+    55% {
+        transform: rotate(-1deg) scale(1.008);
+    }
+
+    75% {
+        transform: rotate(0.6deg) scale(1.004);
+    }
+
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .block {
+        display: block;
+        min-height: 300px;
+        padding: 10px;
+        margin-bottom: 20px;
+        background-size: cover;
+    }
+
+    .secret-content {
+        display: block;
+        width: 100%;
+        padding: 40px 20px;
+    }
+
+    .txt-beige {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
+
+/* slider */
+
+.slider {
+    position: relative;
+    margin: 0 auto;
+}
+
+.slider-container {
+    overflow: hidden;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    background: none;
+    color: #EA5517;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s;
+    z-index: 10;
+}
+
+.slider-btn.prev {
+    left: 0;
+}
+
+.slider-btn.next {
+    right: 0;
+}
+
+.slider-btn.disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.product-card {
+    height: 100%;
+    padding: 20px;
+    overflow: hidden;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    border-color: #ea561771;
+}
+
+.card-title {
+    font-family: 'Alistair Signature', cursive;
+    color: #EA5517 !important;
+    font-size: 40px;
+    line-height: 0.9;
+    padding: 0 25px;
+}
+
+.card-text {
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #4D0600;
+    font-size: 14px;
+    text-align: justify;
+    padding: 0 25px;
+    margin-top: 20px;
+}
+
+.price {
+    font-size: 20px;
+    color: #EA5517;
+    font-weight: 700;
+}
+
+/* timer */
+
+.title-post {
+    font-family: 'Alistair Signature', cursive;
+    font-size: 40px;
+    line-height: 0.2;
+    color: #4D0600;
+    margin-bottom: 100px;
+}
+
+.remark {
+    font-family: 'Alistair Signature', cursive;
+    font-size: 40px;
+    line-height: 0.2;
+    color: #EA5517;
+}
+
+.timer1 {
+    font-family: 'Alistair Signature', cursive;
+    font-size: 70px;
+    color: #4D0600;
+}
+
+@media (max-width: 768px) {
+    .timer1 {
+        font-size: 40px;
+    }
+}
+
+.pattern {
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.action img {
+    animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* gallery */
+
+.gallery img {
+    transition: 0.5s;
+}
+
+.gallery img:hover {
+    filter: sepia(0.4);
+}
+
+/* footer */
+
+footer {
+    margin: 100px 0 0;
+    padding-top: 100px;
+    background: url('../img/bg-footer.svg') no-repeat;
+    height: auto;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer li {
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+footer a {
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-decoration: none;
+    color: #4D0600;
+    font-size: 14px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+}
+
+footer .title {
+    padding-top: 20px;
+}
+
+.confid {
+    padding-top: 20px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 14px;
+}
+
+.icon-set {
+    padding-top: 75px;
+}
+
+@media (max-width: 768px) {
+    footer {
+        background-image: none;
+        background-color: #F7F0DF;
+        padding-bottom: 40px;
+    }
+}
+
+/* reg, author */
+
+.reg-card,
+.login-card {
+    background-color: #F7F0DF;
+    border-radius: 20px;
+}
+
+.reg-title,
+.login-title {
+    font-family: 'Novelist', serif;
+    color: #EA5517 !important;
+}
+
+.form-label {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 14px;
+    color: #EA5517;
+}
+
+input {
+    border: 2px solid #EA5517;
+    border-radius: 10px;
+    padding: 8px 12px;
+    outline: none;
+}
+
+.reg-link a {
+    text-decoration: none;
+    color: #EA5517;
+}
+
+.reg-link {
+    color: #4D0600;
+}
+
+/* modal*/
+
+.order-modal {
+    background-color: #F7F0DF !important;
+}
+
+.order-modal__logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.order-modal__text {
+    color: #4D0600;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.order-modal__input {
+    border: 2px solid #EA5517;
+    border-radius: 15px;
+    padding: 12px;
+}
+
+.order-modal__btn {
+    background-color: #EA5517;
+    color: #fff;
+    border: 2px solid #EA5517;
+    border-radius: 20px;
+    padding: 12px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.order-modal__btn:hover,
+.order-modal__btn:focus {
+    background-color: transparent;
+    color: #EA5517;
+    border-color: #EA5517;
+}
+
+.order-modal__note {
+    font-size: 12px;
+    color: #4D0600;;
+    margin-top: 15px;
+}
