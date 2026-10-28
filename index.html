@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <div class="logo d-flex align-items-center">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="img/logo.svg">
+                        <img src="img/logo-desk.svg" alt="">
+                    </picture>
+                </div>
+
+                <button class="navbar-toggler border-2 border-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <img src="img/burger.svg" alt="">
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link" href="index.html#hero">Главная</a>
+                        <a class="nav-link" href="catalog.html">Каталог</a>
+                        <a class="nav-link" href="index.html#about">О нас</a>
+                        <a class="nav-link" href="index.html#secret">Секрет</a>
+                        <a class="nav-link" href="index.html#bestsellers">Хиты</a>
+                        <a class="nav-link" href="index.html#action">Скидка</a>
+                        <a class="nav-link" href="index.html#gallery">Галерея</a>
+                        <a class="nav-link" href="index.html#contact">Контакты</a>
+                        <a class="nav-link" href="reg.html">Личный кабинет</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="hero text-center pt-lg-5">
+            <h1 class="hero-title">Свежая выпечка с любовью</h1>
+            <button class="btn-action" data-bs-toggle="modal" data-bs-target="#orderModal">
+                хочу попробовать
+            </button>
+
+            <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content order-modal">
+
+                        <div class="modal-header border-0 pb-0">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Закрыть"></button>
+                        </div>
+
+                        <div class="modal-body text-center px-4 pb-5 pt-0">
+
+                            <img src="img/logo-desk.svg" alt="Рогалик" class="order-modal__logo">
+
+                            <h2 class="title mb-3 text-balance">ХОЧУ ПОПРОБОВАТЬ!</h2>
+
+                            <p class="order-modal__text">
+                                Оставьте свой номер телефона, и мы свяжемся с вами для оформления заказа.
+                            </p>
+
+                            <form id="orderForm">
+                                <div class="mb-3">
+                                    <input type="text" class="w-100 order-modal__input" placeholder="Ваше имя"
+                                        required>
+                                </div>
+                                <div class="mb-4">
+                                    <input type="tel" class="w-100 order-modal__input"
+                                        placeholder="+7 (___) ___-__-__" required>
+                                </div>
+
+                                <button type="submit" class="w-100 order-modal__btn">ОТПРАВИТЬ</button>
+                            </form>
+
+                            <p class="order-modal__note">
+                                Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container p-5">
+                <div class="col-lg-12 d-flex flex-row justify-content-between ms-auto flex-wrap flex-column-reverse flex-lg-row">
+                    <div class="col-lg-6 col-12 order-1 order-lg-0 d-flex justify-content-center">
+                        <picture>
+                            <img class="container p-1" src="img/ph1.svg" alt="">
+                        </picture>
+                    </div>
+                    <div class="col-lg-6 col-12 content-about order-2">
+                        <h2 class="title col-lg-7 text-balance">ДОКАЗАТЕЛЬСТВО НАХОДИТСЯ В <span
+                                class="font-another">тесте</span>
+                        </h2>
+                        <div class="text-about">
+                            <p class="text-content">Мы не используем улучшители, разрыхлители и замороженные
+                                полуфабрикаты.
+                                Только живая
+                                закваска,
+                                французская мука и фермерское масло. Наш хлеб дышит, хрустит и не черствеет на второй
+                                день.
+                            </p>
+                            <p class="text-content">Мы не гонимся за количеством. У нас нет цели заполнить полки — есть
+                                цель
+                                наполнить смыслом
+                                каждую
+                                буханку. Мы работаем ночью, чтобы вы ели свежее утром. Мы ждём, когда тесто подойдёт,
+                                даже
+                                если
+                                это занимает 12 часов. Потому что быстро — это про фастфуд,
+                                а медленно — про настоящий вкус.</p>
+                            <p class="text-content">Попробуйте — и вы почувствуете разницу. Всё остальное — просто
+                                слова. Мы
+                                не доказываем в
+                                рекламе
+                                — мы доказываем в печи. Приходите, отломите кусок, закройте глаза и вспомните, каким
+                                должен
+                                быть
+                                хлеб. Настоящий. Честный. Сделанный с душой.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="secret" id="secret">
+            <div class="container">
+                <h2 class="title text-center text-balance">РАСКРЫВАЕМ СЕКРЕТ...</h2>
+                <div class="col-lg-12 col-12 d-flex justify-content-center">
+                    <p class="text-content text-secret col-lg-7 col-12">Всё просто: мы не печём хлеб. Мы создаём
+                        ощущение дома.
+                        И делаем это через
+                        два главных ингредиента — любовь и уют.</p>
+                </div>
+
+                <div class="blocks d-flex flex-row justify-content-between ms-auto flex-wrap text-center">
+                    <div class="block col-lg-6 col-12">
+                        <div class="secret-content d-flex flex-column justify-content-center">
+                            <h3 class="title-secret text-balance lh-1">Любовь</h3>
+                            <p class="text-content text-secret txt-beige">Мы не просто выпекаем, мы заботимся. Чувствуем
+                                тесто, ждём его, уважаем
+                                каждый
+                                час расстойки. Потому что хороший хлеб — это не рецепт, а отношение.</p>
+                        </div>
+                    </div>
+                    <div class="block col-lg-6 col-12d-flex justify-content-between">
+                        <div class="secret-content d-flex flex-column justify-content-center">
+                            <h3 class="title-secret text-balance lh-1">Уют</h3>
+                            <p class="text-content text-secret txt-beige">Это запах, от которого хочется остаться. Это
+                                хруст, согревающий изнутри. Мы печём так, чтобы за столом забывали о времени и просто
+                                чувствовали себя дома.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="bestsellers" id="bestsellers">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2 class="title text-balance">ХИТЫ ДНЯ</h2>
+                    </div>
+                </div>
+
+                <div class="slider position-relative">
+                    <button class="slider-btn prev position-absolute top-50 start-0 translate-middle-y" id="prevSlide">
+                        ‹
+                    </button>
+
+                    <div class="slider-container overflow-hidden mx-5">
+                        <div class="row gx-3 flex-nowrap" id="slidesWrapper">
+
+                            <div class="col-12 col-md-6 col-lg-4 slide">
+                                <div class="product-card h-100">
+                                    <img class="w-100" src="img/1.svg" alt="Синнабон">
+                                    <h3 class="card-title text-balance lh-1">Синнабон</h3>
+                                    <p class="card-text">Слоистое тесто, карамельная начинка и нежный сливочный крем
+                                        сверху. Мы сворачиваем каждый рулет вручную, щедро посыпаем корицей и поливаем
+                                        глазурью, пока булочка ещё горячая. Тает во рту — и в душе.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-4 slide">
+                                <div class="product-card h-100">
+                                    <img class="w-100" src="img/2.svg" alt="Завитушка">
+                                    <h3 class="card-title text-balance lh-1">Завитушка с малиновым джемом</h3>
+                                    <p class="card-text">Воздушное дрожжевое тесто, внутри — нежная творожная начинка с
+                                        кислинкой малины. Каждый завиток пропитан ягодным соком и тает слоями. Похожа на
+                                        детство, только взрослая и очень вкусная.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-4 slide">
+                                <div class="product-card h-100">
+                                    <img class="w-100" src="img/3.svg" alt="Маффин">
+                                    <h3 class="card-title text-balance lh-1">Маффин с шоколадом</h3>
+                                    <p class="card-text">Влажный, плотный, с целыми кусочками чёрного шоколада внутри.
+                                        Мы не жалеем начинки — каждая крошка плавится при выпечке, оставляя тягучие
+                                        следы. Тот случай, когда шоколада МНОГО и это правильно.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-4 slide">
+                                <div class="product-card h-100">
+                                    <img class="w-100" src="img/4.svg" alt="Крендель">
+                                    <h3 class="card-title text-balance lh-1">Крендель с солью</h3>
+                                    <p class="card-text">Хрустящая золотистая корочка с крупной солью и мягкое, слегка
+                                        тягучее тесто внутри. Идеальный баланс солёного и насыщенного дрожжевого
+                                        аромата.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-4 slide">
+                                <div class="product-card h-100">
+                                    <img class="w-100" src="img/5.svg" alt="Корзинка с малиной">
+                                    <h3 class="card-title text-balance lh-1">Корзинка с малиной</h3>
+                                    <p class="card-text">Слоистое тесто, карамельная начинка и нежный сливочный крем
+                                        сверху. Мы сворачиваем каждый рулет вручную, щедро посыпаем корицей и поливаем
+                                        глазурью, пока булочка ещё горячая.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-4 slide">
+                                <div class="product-card h-100">
+                                    <img class="w-100" src="img/6.svg" alt="Корзинка с голубикой">
+                                    <h3 class="card-title text-balance lh-1">Корзинка с голубикой</h3>
+                                    <p class="card-text">Песочная корзинка, бархатистый крем и шапка сочной голубики.
+                                        Ягода слегка хрустит, а ванильный крем обволакивает вкус. Нежная и безумно
+                                        вкусная.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <button class="slider-btn next position-absolute top-50 end-0 translate-middle-y" id="nextSlide">
+                        ›
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="action" id="action">
+            <div class="container p-5">
+                <h2 class="title text-center text-balance">СКИДКА 30% НА ПЕРВУЮ ПОКУПКУ</h2>
+                <p class="title-post text-center text-balance">до 30 ноября</p>
+
+                <div class="row time-action">
+                    <div class="col-lg-6 col-12">
+                        <div class="timer">
+                            <p class="remark text-balance">Осталось..</p>
+                            <div class="timer1" id="timer1">
+                                <span class="days">00</span> дн.
+                                <span class="hours">00</span> час.
+                                <span class="minutes">00</span> мин.
+                                <span class="seconds">00</span> сек.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 text-center d-flex justify-content-center pt-5">
+                        <img src="img/pie1.svg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="pattern">
+            <img src="img/pattern1.svg" alt="" class="col-12">
+        </div>
+
+        <section class="gallery" id="gallery">
+            <div class="container p-5">
+                <h2 class="title text-center text-balance">ГАЛЕРЕЯ</h2>
+                <div class="d-flex justify-content-between gap-4 flex-lg-row-reverse flex-column-reverse">
+                    <img src="img/gallery1.svg" alt="" class="col-12 col-lg-4">
+                    <img src="img/gallery2.svg" alt="" class="col-12 col-lg-4">
+                    <img src="img/gallery3.svg" alt="" class="col-12 col-lg-4">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contact">
+        <div class="container p-5">
+            <div class="logo-footer d-flex align-items-center mb-5">
+                <img src="img/logo-desk.svg" alt="Логотип" style="height: 50px;" />
+            </div>
+
+            <div class="row g-4">
+                <div class="col-12 col-lg-6">
+                    <h2 class="title text-center text-lg-start text-balance">МЫ ЖДЕМ ВАС</h2>
+                    <ul class="list-contact">
+                        <li>
+                            <img src="img/uil_map-pin.svg" alt="Адрес" />
+                            <a href="#">г. Ульяновск, ул. Гончарова, д. 11</a>
+                        </li>
+                        <li>
+                            <img src="img/lucide_timer.svg" alt="Время работы" />
+                            <a href="#">Ежедневно: 08:00 – 20:00</a>
+                        </li>
+                        <li>
+                            <img src="img/flowbite_phone-outline.svg" alt="Телефон" />
+                            <a href="tel:+71234567890">+7 123 456 78 90</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="confid">
+                        <p>Политика конфиденциальности</p>
+                        <p>
+                            Мы используем cookies для сбора обезличенных персональных данных.
+                            Они помогают настраивать рекламу и анализировать трафик.
+                            Оставаясь на сайте, вы соглашаетесь на сбор таких данных.
+                        </p>
+                    </div>
+
+                    <div class="icon-set d-flex flex-row gap-3 justify-content-center justify-content-lg-start">
+                        <img src="img/max.svg" alt="" />
+                        <img src="img/vk.svg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+</html>

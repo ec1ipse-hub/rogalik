@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <div class="logo d-flex align-items-center">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="img/logo.svg">
+                        <img src="img/logo-desk.svg" alt="">
+                    </picture>
+                </div>
+
+                <button class="navbar-toggler border-2 border-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <img src="img/burger.svg" alt="">
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link" href="index.html#hero">Главная</a>
+                        <a class="nav-link" href="catalog.html">Каталог</a>
+                        <a class="nav-link" href="index.html#about">О нас</a>
+                        <a class="nav-link" href="index.html#secret">Секрет</a>
+                        <a class="nav-link" href="index.html#bestsellers">Хиты</a>
+                        <a class="nav-link" href="index.html#action">Скидка</a>
+                        <a class="nav-link" href="index.html#gallery">Галерея</a>
+                        <a class="nav-link" href="index.html#contact">Контакты</a>
+                        <a class="nav-link" href="reg.html">Личный кабинет</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <section class="catalog-section py-5">
+        <div class="container pt-5">
+
+            <h2 class="title catalog-main-title text-center mb-5">КАТАЛОГ</h1>
+
+                <div class="row g-4 justify-content-center">
+
+                    <div class="col-12 col-md-6 col-lg-4 slide">
+                        <div class="product-card h-100 d-flex flex-column justify-content-between">
+                            <img class="w-100" src="img/1.svg" alt="Синнабон">
+                            <h3 class="card-title">Синнабон</h3>
+                            <p class="card-text">Слоистое тесто, карамельная начинка и нежный сливочный крем
+                                сверху. Мы сворачиваем каждый рулет вручную, щедро посыпаем корицей и поливаем
+                                глазурью, пока булочка ещё горячая. Тает во рту — и в душе.</p>
+                            <button class="btn-action" data-bs-toggle="modal" data-bs-target="#orderModal">
+                                хочу попробовать
+                            </button>
+
+                            <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content order-modal">
+
+                                        <div class="modal-header border-0 pb-0">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Закрыть"></button>
+                                        </div>
+
+                                        <div class="modal-body text-center px-4 pb-5 pt-0">
+
+                                            <img src="img/logo-desk.svg" alt="Рогалик" class="order-modal__logo">
+
+                                            <h2 class="title mb-3 text-balance">ХОЧУ ПОПРОБОВАТЬ!</h2>
+
+                                            <p class="order-modal__text">
+                                                Оставьте свой номер телефона, и мы свяжемся с вами для оформления
+                                                заказа.
+                                            </p>
+
+                                            <form id="orderForm">
+                                                <div class="mb-3">
+                                                    <input type="text" class="w-100 order-modal__input"
+                                                        placeholder="Ваше имя" required>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <input type="tel" class="w-100 order-modal__input"
+                                                        placeholder="+7 (___) ___-__-__" required>
+                                                </div>
+
+                                                <button type="submit" class="w-100 order-modal__btn">ОТПРАВИТЬ</button>
+                                            </form>
+
+                                            <p class="order-modal__note">
+                                                Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 slide">
+                        <div class="product-card h-100 d-flex flex-column">
+                            <img class="w-100" src="img/2.svg" alt="Завитушка с малиной">
+                            <h3 class="card-title">Завитушка с малиновым джемом</h3>
+                            <p class="card-text">Воздушное дрожжевое тесто,
+                                внутри — нежная творожная начинка с кислинкой малины.
+                                Каждый завиток пропитан ягодным соком и тает слоями. Похожа на детство,
+                                только взрослая и очень вкусная.</p>
+                            <button class="btn-action" data-bs-toggle="modal" data-bs-target="#orderModal">
+                                хочу попробовать
+                            </button>
+
+                            <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content order-modal">
+
+                                        <div class="modal-header border-0 pb-0">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Закрыть"></button>
+                                        </div>
+
+                                        <div class="modal-body text-center px-4 pb-5 pt-0">
+
+                                            <img src="img/logo-desk.svg" alt="Рогалик" class="order-modal__logo">
+
+                                            <h2 class="title mb-3 text-balance">ХОЧУ ПОПРОБОВАТЬ!</h2>
+
+                                            <p class="order-modal__text">
+                                                Оставьте свой номер телефона, и мы свяжемся с вами для оформления
+                                                заказа.
+                                            </p>
+
+                                            <form id="orderForm">
+                                                <div class="mb-3">
+                                                    <input type="text" class="w-100 order-modal__input"
+                                                        placeholder="Ваше имя" required>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <input type="tel" class="w-100 order-modal__input"
+                                                        placeholder="+7 (___) ___-__-__" required>
+                                                </div>
+
+                                                <button type="submit" class="w-100 order-modal__btn">ОТПРАВИТЬ</button>
+                                            </form>
+
+                                            <p class="order-modal__note">
+                                                Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 slide">
+                        <div class="product-card h-100 d-flex flex-column">
+                            <img class="w-100" src="img/3.svg" alt="Маффин с шоколадом">
+                            <h3 class="card-title">Маффин с шоколадом</h3>
+                            <p class="card-text">Влажный, плотный, с целыми кусочками чёрного шоколада внутри.
+                                Мы не жалеем начинки — каждая крошка плавится при выпечке,
+                                оставляя тягучие следы. Тот случай,
+                                когда шоколада МНОГО и это правильно.</p>
+                            <button class="btn-action" data-bs-toggle="modal" data-bs-target="#orderModal">
+                                хочу попробовать
+                            </button>
+
+                            <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content order-modal">
+
+                                        <div class="modal-header border-0 pb-0">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Закрыть"></button>
+                                        </div>
+
+                                        <div class="modal-body text-center px-4 pb-5 pt-0">
+
+                                            <img src="img/logo-desk.svg" alt="Рогалик" class="order-modal__logo">
+
+                                            <h2 class="title mb-3 text-balance">ХОЧУ ПОПРОБОВАТЬ!</h2>
+
+                                            <p class="order-modal__text">
+                                                Оставьте свой номер телефона, и мы свяжемся с вами для оформления
+                                                заказа.
+                                            </p>
+
+                                            <form id="orderForm">
+                                                <div class="mb-3">
+                                                    <input type="text" class="w-100 order-modal__input"
+                                                        placeholder="Ваше имя" required>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <input type="tel" class="w-100 order-modal__input"
+                                                        placeholder="+7 (___) ___-__-__" required>
+                                                </div>
+
+                                                <button type="submit" class="w-100 order-modal__btn">ОТПРАВИТЬ</button>
+                                            </form>
+
+                                            <p class="order-modal__note">
+                                                Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 slide">
+                        <div class="product-card h-100 d-flex flex-column justify-content-between">
+                            <img class="w-100" src="img/1.svg" alt="Синнабон">
+                            <h3 class="card-title">Синнабон</h3>
+                            <p class="card-text">Слоистое тесто, карамельная начинка и нежный сливочный крем
+                                сверху. Мы сворачиваем каждый рулет вручную, щедро посыпаем корицей и поливаем
+                                глазурью, пока булочка ещё горячая. Тает во рту — и в душе.</p>
+                            <button class="btn-action" data-bs-toggle="modal" data-bs-target="#orderModal">
+                                хочу попробовать
+                            </button>
+
+                            <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content order-modal">
+
+                                        <div class="modal-header border-0 pb-0">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Закрыть"></button>
+                                        </div>
+
+                                        <div class="modal-body text-center px-4 pb-5 pt-0">
+
+                                            <img src="img/logo-desk.svg" alt="Рогалик" class="order-modal__logo">
+
+                                            <h2 class="title mb-3 text-balance">ХОЧУ ПОПРОБОВАТЬ!</h2>
+
+                                            <p class="order-modal__text">
+                                                Оставьте свой номер телефона, и мы свяжемся с вами для оформления
+                                                заказа.
+                                            </p>
+
+                                            <form id="orderForm">
+                                                <div class="mb-3">
+                                                    <input type="text" class="w-100 order-modal__input"
+                                                        placeholder="Ваше имя" required>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <input type="tel" class="w-100 order-modal__input"
+                                                        placeholder="+7 (___) ___-__-__" required>
+                                                </div>
+
+                                                <button type="submit" class="w-100 order-modal__btn">ОТПРАВИТЬ</button>
+                                            </form>
+
+                                            <p class="order-modal__note">
+                                                Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 slide">
+                        <div class="product-card h-100 d-flex flex-column">
+                            <img class="w-100" src="img/2.svg" alt="Завитушка с малиной">
+                            <h3 class="card-title">Завитушка с малиновым джемом</h3>
+                            <p class="card-text">Воздушное дрожжевое тесто,
+                                внутри — нежная творожная начинка с кислинкой малины.
+                                Каждый завиток пропитан ягодным соком и тает слоями. Похожа на детство,
+                                только взрослая и очень вкусная.</p>
+                            <button class="btn-action" data-bs-toggle="modal" data-bs-target="#orderModal">
+                                хочу попробовать
+                            </button>
+
+                            <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content order-modal">
+
+                                        <div class="modal-header border-0 pb-0">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Закрыть"></button>
+                                        </div>
+
+                                        <div class="modal-body text-center px-4 pb-5 pt-0">
+
+                                            <img src="img/logo-desk.svg" alt="Рогалик" class="order-modal__logo">
+
+                                            <h2 class="title mb-3 text-balance">ХОЧУ ПОПРОБОВАТЬ!</h2>
+
+                                            <p class="order-modal__text">
+                                                Оставьте свой номер телефона, и мы свяжемся с вами для оформления
+                                                заказа.
+                                            </p>
+
+                                            <form id="orderForm">
+                                                <div class="mb-3">
+                                                    <input type="text" class="w-100 order-modal__input"
+                                                        placeholder="Ваше имя" required>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <input type="tel" class="w-100 order-modal__input"
+                                                        placeholder="+7 (___) ___-__-__" required>
+                                                </div>
+
+                                                <button type="submit" class="w-100 order-modal__btn">ОТПРАВИТЬ</button>
+                                            </form>
+
+                                            <p class="order-modal__note">
+                                                Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 slide">
+                        <div class="product-card h-100 d-flex flex-column">
+                            <img class="w-100" src="img/3.svg" alt="Маффин с шоколадом">
+                            <h3 class="card-title">Маффин с шоколадом</h3>
+                            <p class="card-text">Влажный, плотный, с целыми кусочками чёрного шоколада внутри.
+                                Мы не жалеем начинки — каждая крошка плавится при выпечке,
+                                оставляя тягучие следы. Тот случай,
+                                когда шоколада МНОГО и это правильно.</p>
+                            <button class="btn-action" data-bs-toggle="modal" data-bs-target="#orderModal">
+                                хочу попробовать
+                            </button>
+
+                            <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content order-modal">
+
+                                        <div class="modal-header border-0 pb-0">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Закрыть"></button>
+                                        </div>
+
+                                        <div class="modal-body text-center px-4 pb-5 pt-0">
+
+                                            <img src="img/logo-desk.svg" alt="Рогалик" class="order-modal__logo">
+
+                                            <h2 class="title mb-3 text-balance">ХОЧУ ПОПРОБОВАТЬ!</h2>
+
+                                            <p class="order-modal__text">
+                                                Оставьте свой номер телефона, и мы свяжемся с вами для оформления
+                                                заказа.
+                                            </p>
+
+                                            <form id="orderForm">
+                                                <div class="mb-3">
+                                                    <input type="text" class="w-100 order-modal__input"
+                                                        placeholder="Ваше имя" required>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <input type="tel" class="w-100 order-modal__input"
+                                                        placeholder="+7 (___) ___-__-__" required>
+                                                </div>
+
+                                                <button type="submit" class="w-100 order-modal__btn">ОТПРАВИТЬ</button>
+                                            </form>
+
+                                            <p class="order-modal__note">
+                                                Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+        </div>
+    </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container p-5">
+            <div class="logo-footer d-flex align-items-center mb-5">
+                <img src="img/logo-desk.svg" alt="Логотип" style="height: 50px;" />
+            </div>
+
+            <div class="row g-4">
+                <div class="col-12 col-lg-6">
+                    <h2 class="title text-center text-lg-start">МЫ ЖДЕМ ВАС</h2>
+                    <ul class="list-contact">
+                        <li>
+                            <img src="img/uil_map-pin.svg" alt="Адрес" />
+                            <a href="#">г. Ульяновск, ул. Гончарова, д. 11</a>
+                        </li>
+                        <li>
+                            <img src="img/lucide_timer.svg" alt="Время работы" />
+                            <a href="#">Ежедневно: 08:00 – 20:00</a>
+                        </li>
+                        <li>
+                            <img src="img/flowbite_phone-outline.svg" alt="Телефон" />
+                            <a href="tel:+71234567890">+7 123 456 78 90</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="confid">
+                        <p>Политика конфиденциальности</p>
+                        <p>
+                            Мы используем cookies для сбора обезличенных персональных данных.
+                            Они помогают настраивать рекламу и анализировать трафик.
+                            Оставаясь на сайте, вы соглашаетесь на сбор таких данных.
+                        </p>
+                    </div>
+
+                    <div class="icon-set d-flex flex-row gap-3 justify-content-center justify-content-lg-start">
+                        <img src="img/max.svg" alt="" />
+                        <img src="img/vk.svg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+</html>
